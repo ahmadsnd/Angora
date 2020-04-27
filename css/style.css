@@ -1,0 +1,332 @@
+body {
+    color: #666;
+}
+
+
+/* general */
+
+.container-fluid {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    background-color: #f1f1f1;
+}
+
+.header-parent {
+    position: relative;
+}
+
+.header-letter {
+    position: absolute;
+    color: #999;
+    opacity: 0.5;
+    z-index: -1;
+    left: 50%;
+    top: -25px;
+    font-size: 64px;
+    transform: translateX(-50%);
+}
+
+.line {
+    width: 40px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin: 10px 0px;
+    transform: translateX(-50%);
+}
+
+.header-parent:hover .line {
+    width: 80px;
+    transition: all 0.5s;
+}
+
+p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.75em;
+    margin-bottom: 0;
+}
+
+
+/*  NAVBAR SEC */
+
+.nav-item {
+    color: black !important;
+    font-weight: 600;
+}
+
+.nav-item:hover {
+    color: #f25454 !important;
+}
+
+.nav-icon:hover {
+    color: #f25454 !important;
+}
+
+.cog {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 2500;
+    background-color: #222 !important;
+    color: #fff;
+    border-radius: 0%;
+}
+
+
+/* HOME SEC */
+
+@keyframes moveleft {
+    0% {
+        right: -500%;
+    }
+    100% {
+        right: 0%;
+    }
+}
+
+.carousel-caption {
+    margin-top: 28%;
+    top: 0;
+    font-weight: 900;
+    font-size: 1028px !important;
+    animation-name: moveleft;
+    animation-duration: 0.8s;
+}
+
+.carousel {
+    position: relative;
+}
+
+.myControls {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+}
+
+.carousel-control-next {
+    left: 0px;
+    top: 100px;
+}
+
+
+/* ABOUT SEC */
+
+.sec-title h1 {
+    color: #282828;
+    font-size: 38px;
+    font-weight: 700 !important;
+}
+
+.sec-title p {
+    margin-bottom: 70px;
+    line-height: 1.75em;
+    font-size: 18px;
+    color: #999;
+}
+
+.about-desc p {
+    line-height: 1.75em;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 4px;
+    margin-bottom: 20px;
+    background-color: #eee;
+}
+
+.progress-bar {
+    background-color: #f25454;
+}
+
+section .container {
+    padding-top: 50px !important;
+    padding-bottom: 100px !important;
+}
+
+
+/* MEMBERS SEC */
+
+.member {
+    color: black;
+    line-height: 0em;
+}
+
+.member-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.member-overlay {
+    color: #fff;
+    opacity: 0;
+    z-index: 15;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 15px;
+    background-color: rgba(242, 84, 84, 0);
+}
+
+.member:hover .member-overlay {
+    opacity: 0.85;
+    color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    top: 0;
+    background-color: rgba(242, 84, 84, 0.85);
+    transition: all 0.3s ease-out;
+}
+
+.member:hover img {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.member:hover h5 {
+    color: #f25454;
+}
+
+.review {
+    color: black;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.btn-primary {
+    background-color: #f25454;
+    border-color: #f25454;
+}
+
+.btn:hover {
+    background-color: #f25454;
+    border-color: #f25454;
+    opacity: 0.8;
+}
+
+
+/* services */
+
+.services-items {
+    width: 65%;
+    margin: auto;
+}
+
+.service-icon {
+    color: #f25454;
+}
+
+.item-header {
+    color: #282828;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.item-header:hover {
+    color: #f25454;
+}
+
+.footer {
+    background-image: url(../images/dotted-map.png);
+    padding-top: 15px;
+    padding-bottom: 50px;
+    background-color: #222;
+    margin-bottom: 0;
+}
+
+.footer a {
+    text-decoration: none !important;
+    font-size: 14px;
+    font-weight: 600;
+    color: #b0b0b0;
+    margin-bottom: 0;
+    padding: 0;
+    margin-top: 0;
+}
+
+.footer-last a {
+    border: #fff solid 2px;
+    padding: 5px 8px;
+    border-radius: 8%;
+}
+
+.footer-last a:hover {
+    border: #f25454 solid 2px;
+    padding: 5px 8px;
+    border-radius: 5%;
+}
+
+.footer a:hover {
+    color: #f25454 !important;
+    border-color: #f25454 !important;
+    transition: all 0.3s;
+}
+
+
+/* section review */
+
+.review {
+    line-height: 20px;
+    color: white;
+    background: url(../img/overlay-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 24px;
+    padding: 0;
+}
+
+.review-item {
+    width: 100%;
+    margin: auto;
+}
+
+.review-icon {
+    font-size: 4rem;
+    color: #0078ff;
+    background-color: #fff;
+    display: block;
+    margin: 20 auto;
+    padding: 15px;
+    border-radius: 50%;
+    line-height: 1.6;
+}
+
+
+/* SeCTION COPYRIGHT */
+
+.copyright {
+    background-color: #1a1a1a;
+    padding: 30px;
+}
+
+.copyright-icons {
+    text-decoration: none !important;
+    font-weight: 600;
+    color: #fff;
+    font-size: 16px;
+}
+
+.copyright-icons:hover {
+    color: #f25454 !important;
+    transition: all 0.3s;
+}
+
+
+/* Keep at end */
+
+@media (max-width: 786px) {
+    .services-items {
+        width: 95%;
+        margin: auto;
+    }
+}
